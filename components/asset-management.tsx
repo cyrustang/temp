@@ -392,8 +392,8 @@ export function AssetManagement() {
             </CardHeader>
             <CardContent>
               <AssetPhotoGallery photos={asset._cm_asset_photo_of_cm_asset || []} />
-              <div className="mt-4">
-                <label htmlFor={`location-${asset.id}`} className="block text-sm font-medium text-gray-700 mb-1">
+              <div className="mt-4" flex items-center">
+                <label htmlFor={`location-${asset.id}`} className="text-sm font-medium text-gray-700 mr-2">
                   Next Location:
                 </label>
                 <LocationCombobox
