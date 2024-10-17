@@ -2,7 +2,7 @@ import { AssetManagement } from '@/components/asset-management'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '澳門教區資產管理系統 | Sacred Manager', // Add your desired page title here
+  title: '澳門教區資聖物管理系統 | Sacred Manager', // Add your desired page title here
 }
 
 export default function Home() {
