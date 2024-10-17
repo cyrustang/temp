@@ -1,11 +1,12 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "My Next.js App",
+  title: "Church Managed",
   description: "Created with Next.js 14 and Shadcn UI",
 }
 
@@ -17,7 +18,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="p-4">
+        <nav className="bg-primary text-primary-foreground p-4">
+          <div className="container mx-auto flex justify-between items-center">
+            <Link href="/" className="text-xl font-bold">Church Managed</Link>
+            <div className="space-x-4">
+              <Link href="/" className="hover:underline">Home</Link>
+              {/* Remove or comment out the Asset Management link */}
+              {/* <Link href="/asset-management" className="hover:underline">Asset Management</Link> */}
+            </div>
+          </div>
+        </nav>
+        <main className="container mx-auto p-4 mt-8">
           {children}
         </main>
       </body>

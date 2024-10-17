@@ -383,7 +383,7 @@ export function AssetManagement() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Asset Management System</h1>
+      <h1 className="text-2xl font-bold mb-4">澳門教區資產管理系統</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {assets.map((asset, index) => (
           <Card  key={asset.id} className={`w-full ${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}`}>
@@ -394,7 +394,7 @@ export function AssetManagement() {
               <AssetPhotoGallery photos={asset._cm_asset_photo_of_cm_asset || []} />
               <div className="mt-4 flex items-center">
                 <label htmlFor={`location-${asset.id}`} className="text-sm font-medium text-gray-700 mr-2">
-                  Next Location:
+                  存放地點:
                 </label>
                 <LocationCombobox
                   asset={asset}
