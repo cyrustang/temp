@@ -1,8 +1,14 @@
 import { AssetManagement } from '@/components/asset-management'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '澳門教區資產管理系統 | Sacred Manager', // Add your desired page title here
+}
 
 export default function Home() {
   return (
     <div className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-8">澳門教區資產管理系統</h1>
       <AssetManagement />
     </div>
   )
