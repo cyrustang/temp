@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <nav className="bg-primary text-primary-foreground p-4">
           <div className="container mx-auto flex justify-between items-center">
-            <Link href="/" className="text-xl font-bold">Church Managed</Link>
+            <Link href="/" className="text-xl font-bold">Sacred Manager</Link>
             <div className="space-x-4">
               <Link href="/" className="hover:underline">Home</Link>
               {/* Remove or comment out the Asset Management link */}
