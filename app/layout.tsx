@@ -6,7 +6,7 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "澳門教區資聖物管理系統 | Sacred Manager", // Change this to your desired title
+  title: "澳門教區聖物管理系統 | Sacred Manager", // Change this to your desired title
   description: "Created with Next.js 14 and Shadcn UI",
 }
 
